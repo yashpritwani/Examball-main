@@ -1,0 +1,51 @@
+[{
+    "imageUrl":"https://www.brandeps.com/logo-download/R/React-logo-vector-01.svg",
+    "name":"ReactJs",
+    "content":"React is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies."
+
+    
+},
+{
+    "imageUrl":"https://www.brandeps.com/logo-download/A/Angular-JS-logo-vector-01.svg",
+    "name":"Angular Js",
+    "content":"AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges ..."
+
+    },
+    {
+        "imageUrl":"https://www.brandeps.com/logo-download/A/Amazon-Webservices-logo-vector-01.svg",
+        "name":"AWS",
+        "content":"Amazon Web Services is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, on a pay-as-you-go basis. "
+    
+        },
+        {
+            "imageUrl":"https://www.brandeps.com/logo-download/G/Google-Cloud-logo-vector-01.svg",
+            "name":"GCP",
+            "content":"Google Cloud Platform,by Google, is a suite of cloud services that runs on the same infrastructure that Google uses for its end-user products, such as Google Search, Gmail, ..."
+        
+            },
+            {
+                "imageUrl":"https://www.brandeps.com/logo-download/A/Amazon-Webservices-logo-vector-01.svg",
+                "name":"AWS",
+                "content":"Amazon Web Services is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, on a pay-as-you-go basis. "
+            
+                },
+                {
+                    "imageUrl":"https://www.brandeps.com/logo-download/G/Google-Cloud-logo-vector-01.svg",
+                    "name":"GCP",
+                    "content":"Google Cloud Platform,by Google, is a suite of cloud services that runs on the same infrastructure that Google uses for its end-user products, such as Google Search, Gmail, ..."
+                
+                    },
+                    {
+                        "imageUrl":"https://www.brandeps.com/logo-download/A/Angular-JS-logo-vector-01.svg",
+                        "name":"Angular Js",
+                        "content":"AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges ..."
+                    
+                        },
+                        {
+                            "imageUrl":"https://www.brandeps.com/logo-download/R/React-logo-vector-01.svg",
+                            "name":"ReactJs",
+                            "content":"React is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies."
+                        
+                            
+                        }
+]

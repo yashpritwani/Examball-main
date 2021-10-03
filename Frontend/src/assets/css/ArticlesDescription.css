@@ -1,0 +1,8 @@
+/* TODO:    */
+.MuiTab-wrapper {
+    width: 100%;
+    display: inline-flex;
+    align-items: flex-start ;
+    flex-direction: row-reverse ;
+    justify-content: space-between ;
+  }

@@ -1,0 +1,26 @@
+.App {
+
+}
+
+*:focus {
+  outline: 0;
+}
+
+/* 
+.background-image1{
+  background-image: url(./assets/images/Blue_Background.svg);
+background-position:left ;
+ background-repeat: no-repeat;
+ background-size: contain;
+
+
+}
+
+.background-image2{
+  background-image:url(./assets/images/Pink_Background.svg);
+background-position:right -25px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+*/

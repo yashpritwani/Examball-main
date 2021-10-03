@@ -1,0 +1,30 @@
+
+  .root-react-component-countdown-timer{
+
+  }
+
+
+
+  .countBox {
+    
+    display: flex;
+    width: 215px;
+    flex-direction: row-reverse;
+  }
+   .countBoxItem {
+    flex: 1;
+  }
+    .label {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .count {
+    font-size: 30px;
+    text-align: center;
+  }
+  .border{
+    border: 2px solid #cfcfcf;
+    border-radius: 10px;
+    width: "100%";
+  }

@@ -1,0 +1,265 @@
+{
+  "Questions": [
+    {
+      "Question Number": "1",
+      "Question": "Company WhizLabs has 2 Azure subscriptions named “Staging” and “Production”.\nThe “Staging” subscription has the following resource groups.\nName\nRegion\nLock type\nrg-staging-1\nWest Europe\nNone\nrg-staging-2\nWest Europe\nRead-only\nThe company has deployed a storage account stwhizlabs to the rg-staging-1 resource group.\nThe “Production” subscription has the following resource groups.\nName\nRegion\nLock type\nrg-production-3\nEast Asia\nDelete\nrg-production-4\nCentral US\nNone\nWould you be able to move stwhizlabs resource to the rg-production-3 resource group?",
+      "Options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "Correct Answer": [
+        "0"
+      ],
+      "Explanation": "There is a \"Delete\" lock on the rg-production-3 resource group. You can still move the storage account stwhizlabs to the target resource group.\nYou cannot delete the resources in the resource group with \"Delete\" lock, but you can move resources to the group.\nFor more information on resource locks, please visit the following URL-\nhttps://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources\n",
+      "metadata": ""
+    },
+    {
+      "Question Number": "2",
+      "Question": "Your company has an Azure AD tenant named whizlabs.com.\nThe following users are defined in the tenant.\nName\nRole\nwhizlabusr1\nCloud device administrator\nwhizlabusr2\nUser administrator\nThe tenant also consists of the following Windows 10 devices.\nName\nJoin type\nwhizlabvm1\nAzure AD registered\nwhizlabvm2\nAzure AD joined\nThe tenant also has the following groups defined.\nName\nJoin Type\nOwner\nwhizlabgrp1\nAssigned\nwhizlabusr1\nwhizlabgrp2\nDynamic Device\nwhizlabusr2\nWould the user whizlabusr1 be able to add the device whizlabvm2 to the group whizlabgrp1?",
+      "Options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "Correct Answer": [
+        "0"
+      ],
+      "Explanation": "Since whizlabusr1 user has the role of Cloud Device Administrator and is a Group Owner, the user would be able to add registered or joined devices to the group.\nThe Microsoft documentation provides the following information about Cloud Device Administrator.<Image1>\nFor more information about the Cloud Device Administrator role and on working with group administrators, please visit the following URL-\nhttps://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-accessmanagement-managing-group-owners\nhttps://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#cloud-device-administrator-permissions\n",
+      "metadata": {
+        "Images": {
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "3",
+      "Question": "A company has deployed the following Azure Load Balancer resources to their Azure subscription.\nName\nSKU\nwhizlabload1\nBasic\nwhizlabload2\nStandard\nEach load balancer would have to load balance requests across three virtual machines.\nYou want to ensure that whizlabload2 can load balance requests across the three virtual machines.\nWhich of the following has to be implemented?",
+      "Options": [
+        "A. Ensure the virtual machines are running the same operating system.",
+        "B. Ensure the virtual machines are created in the same resource group.",
+        "C. Ensure the virtual machines are created in the same virtual network.",
+        "D. Ensure the virtual machines are created in the same availability set or virtual machine scale set."
+      ],
+      "Correct Answer": [
+        "2"
+      ],
+      "Explanation": "You look at the comparison between the Standard and the Basic Load Balancer in the Microsoft documentation. It clearly mentions that the virtual machines need to be part of a single virtual network.<Image1>\nSince this is clearly mentioned in the documentation, all other options are incorrect.\nFor more information on the Azure Load Balancer, please visit the following URL-\nhttps://docs.microsoft.com/en-us/azure/load-balancer/skus\n",
+      "metadata": {
+        "Images": {
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "4",
+      "Question": "A company has an Azure subscription. They want to transfer around 6 TB of data to the subscription. They plan to use the Azure Import/Export service. Which of the following can they use as the destination for the imported data?",
+      "Options": [
+        "A. Azure Data Lake Storage",
+        "B. Azure SQL Database",
+        "C. Azure File Sync Storage",
+        "D. Azure Blob storage"
+      ],
+      "Correct Answer": [
+        "3"
+      ],
+      "Explanation": "When transferring a large amount of data to an Azure storage account, you can transfer data to Azure blob storage or Azure file storage.\nThe Microsoft documentation mentions the following.<Image1>\nSince this is clear from the Microsoft documentation, all other options are incorrect.\nFor more information on the Import-Export service, please visit the following URL-\nhttps://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-service\n",
+      "metadata": {
+        "Images": {
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "5",
+      "Question": "A company has an Azure AD tenant. They have users that are also synced with their on-premise environment. The domain contains the following users.\nName\nRole\nwhizlabadmin1\nSecurity administrator\nwhizlabadmin2\nBilling administrator\nwhizlabusr\nReports reader\nThe administrator has enabled self-service password reset (SSPR)  for all users.\nThe administrator has enabled the following SSPR settings.\nNumber of methods required to reset – 2\nMethods available to users – Mobile phone and Security questions\nNumber of questions to register – 3\nNumber of questions to reset – 3\nThe following security questions are chosen.\nIn what city was your first job?\nWhat was the name of the first school you attended?\nWhat was your first job?\nWould whizlabadmin1 be required to answer the security question “In what city was your first job?” to reset their password?",
+      "Options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "Correct Answer": [
+        "1"
+      ],
+      "Explanation": "For administrators, the password reset policy is different, wherein they are not asked for security questions.\nThe Microsoft documentation mentions the following.<Image1>\nFor more information on the password reset policy for administrators, please visit the following URL-\nhttps://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-policy\n",
+      "metadata": {
+        "Images": {
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "6",
+      "Question": "Your company has an Azure subscription, and an on-premises file server named demoserver. You need to synchronize files with the demoserver and Azure using Azure File Sync Service. You already created a sync group. Which of the following three actions will you perform next?",
+      "Options": [
+        "A. Create an Azure on-premise data gateway.",
+        "B. Install the Azure File Sync agent on demoserver.",
+        "C. Create a Recovery Services vault.",
+        "D. Register demoserver.",
+        "E. Install the DFS Replication server role on demoserver.",
+        "F. Add a server endpoint."
+      ],
+      "Correct Answer": [
+        "1",
+        "3",
+        "5"
+      ],
+      "Explanation": "This is also given in the Microsoft documentation in the steps for the deployment.<Image1>\nFor more information on file sync deployment, please visit the below URL-\nhttps://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-deployment-guide?tabs=portal\n",
+      "metadata": {
+        "Images": {
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "7",
+      "Question": "You need to deploy two Azure virtual machines named VM1 and VM2 based on the Windows server 2016. The deployment must meet the following requirements.\nProvide a Service Level Agreement (SLA) of 99.95 percent availability.\nUse managed disks.\nYou propose a solution to create a scale set for the requirement.\nWould the solution meet the goal?",
+      "Options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "Correct Answer": [
+        "1"
+      ],
+      "Explanation": "Neither Scale Set nor Managed Disk does not have SLA and can't help to meet the goal of 99.95% SLA.<Image1>\nFor more information about Scale Set and Managed Disks SLA  please visit the below URLs-\nhttps://azure.microsoft.com/en-ca/support/legal/sla/virtual-machine-scale-sets/v1_1/\nhttps://azure.microsoft.com/en-in/support/legal/sla/managed-disks/v1_0/\n",
+      "metadata": {
+        "Images": {
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "8",
+      "Question": "Your company has an Azure account and an Azure subscription. They have created a Virtual Network named whizlabs-net. The following users have been setup.\nUser\nRole\nwhizlabs-usr1\nOwner\nwhizlabs-usr2\nSecurity admin\nwhizlabs-usr3\nNetwork Contributor\nWhich of the following users would be able to add a subnet to the Virtual Network?",
+      "Options": [
+        "A. whizlabs-usr1 only",
+        "B. whizlabs-usr2 only",
+        "C. whizlabs-usr3 only",
+        "D. whizlabs-usr1 and whizlabs-usr2 only",
+        "E. whizlabs-usr1 and whizlabs-usr3 only",
+        "F. whizlabs-usr2 and whizlabs-usr3 only",
+        "G. whizlabs-usr1, whizlabs-usr2 and whizlabs-usr3"
+      ],
+      "Correct Answer": [
+        "4"
+      ],
+      "Explanation": "If you look at the Network Contributor Role, it has access to manage Virtual Networks. And, of course, the Owner by default has all privileges over Azure resources.<Image1>\nFor more information on the built-in roles, please go to the below URLs-\nhttps://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles\nhttps://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#network-contributor\n",
+      "metadata": {
+        "Images": {
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "9",
+      "Question": "A company has created a storage account in their Azure subscription. The name of the storage account is whizlabstore. They have also created a file share named demo. They need to access the files in the file share via a UNC path.\nYou need to fill in the following blocks to ensure that the right UNC path is provided.<Image1>\nWhich of the following needs to go into Slot3?",
+      "Options": [
+        "A. blob",
+        "B. blob.core.windows.net",
+        "C. portal.azure.com",
+        "D. file",
+        "E. file.core.windows.net",
+        "F. whizlabstore",
+        "G. demo"
+      ],
+      "Correct Answer": [
+        "6"
+      ],
+      "Explanation": "To work with UNC path format, you have to mount the Azure file share with File Explorer. The UNC path format is:\n\\\\.file.core.windows.net\\\nor in our case:\n\\\\whizlabstore.file.core.windows.net\\demo\nFor more information on using Aure file share service, please visit the below URLs-\nhttps://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows\nhttps://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file?redirectedfrom=MSDN\n",
+      "metadata": {
+        "Images": {
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "10",
+      "Question": "You have an Azure subscription named whizlabstaging. Under the subscription, you create a resource group named whizlabs-rg.\nThen you create an Azure policy based on the “Not allowed resources types” definition. Here you define the parameters as Microsoft.Network.virtualNetworks as the not allowed resource type. You assign this policy to the Tenant Root Group.\nWould you be able to create a virtual machine in the whizlabs-rg resource group?",
+      "Options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "Correct Answer": [
+        "1"
+      ],
+      "Explanation": "Since the policy is applied to the Tenant Root Group, it would be applied to all subscriptions and resource groups. If you need to create a virtual machine, you must have permission to create virtual network resources required for VM provisioning. Hence the policy restricts the creation of the Vnet resources. You wouldn't be able to create a new VM in this resource group.\nFor more information on creating Azure Policies, please visit the below URL-\nhttps://docs.microsoft.com/en-us/azure/governance/policy/overview\n",
+      "metadata": ""
+    },
+    {
+      "Question Number": "11",
+      "Question": "You have an Azure virtual machine based on the Windows Server 2016 image. You implement Azure backup for the virtual machine. You want to restore the virtual machine by using the Replace existing option. You need to go ahead and replace the virtual machine using the Azure Backup option. Which of the following needs to be done?",
+      "Options": [
+        "A. Create a custom image.",
+        "B. Stop the virtual machine.",
+        "C. Allocate a new disk.",
+        "D. Enable encryption on the disk."
+      ],
+      "Correct Answer": [
+        "1"
+      ],
+      "Explanation": "The virtual machine has to be in the Stopped or Deallocated state to replace the virtual machine's existing disks.\nFor more information on replacing existing disks, please visit the following URL-\nhttps://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms#replace-existing-disks\n",
+      "metadata": ""
+    },
+    {
+      "Question Number": "12",
+      "Question": "A company has the following resources deployed to their Azure subscription.\nName\nType\nResource Group\nwhizlab-vnet1\nVirtual Network\nwhizlabs-rg\nwhizlab-vnet2\nVirtual Network\nwhizlabs-rg\nwhizlabvm\nVirtual machine\nwhizlabs-rg\nThe virtual machine whizlabvm is currently in the running state.\nThe company now assigns the below Azure policy.<Image1><Image2>\nThe Not Allowed resources types are\nMicrosoft.Network/virtualNetworks\nMicrosoft/Compute/virtualMachines\nWould the state of the virtual machine change to deallocated?",
+      "Options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "Correct Answer": [
+        "1"
+      ],
+      "Explanation": "Azure policies would only highlight the compliance of existing resources and enforce the policy restrictions on new resources. Hence the state of the virtual machine would remain as it is.\nFor more information on Azure policies, please visit the below URL-\nhttps://docs.microsoft.com/en-us/azure/governance/policy/overview\n",
+      "metadata": {
+        "Images": {
+          "IMG2": "Image_2.png",
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "13",
+      "Question": "A company has an Azure subscription that contains the following resource groups.\nName\nLock Name\nLock type\nwhizlabs-rg1\nNone\nNone\nwhizlabs-rg2\nwhizlablock1\nDelete\nThe resource group whizlabs-rg1 contains the following resources.\nName\nType\nLock Name\nLock type\nwhizlabstore2090\nStorage account\nwhizlablock2\nDelete\nwhizlabnetwork\nVirtual network\nwhizlablock3\nRead-only\nwhizlabip\nPublic IP address\nNone\nNone\nWould you be able to move the resource whizlabstore2090 from the resource group whizlabs-rg1 to whizlabs-rg2?",
+      "Options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "Correct Answer": [
+        "0"
+      ],
+      "Explanation": "We would be able to move the resource whizlabstore2090 from the resource group whizlabs-rg1 to whizlabs-rg2. The storage account whizlabstore2090 has a Delete lock. It means that we can't delete this resource without removing the lock. But this lock doesn't prevent us from moving a resource from one resource group to another. The current whizlabstore2090 resource group, whizlabs-rg1, doesn't have any locks. The destination resource group whizlab-rg2, similarly to the storage account, has a Delete lock. This lock prevents the deletion of this resource group and all resources within it. But it doesn't restrict the movement of the resources to this group from other groups.\nFor more information on resource locks, please visit the following URL-\nhttps://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources\n",
+      "metadata": ""
+    },
+    {
+      "Question Number": "14",
+      "Question": "A company has the following virtual machines defined as part of their subscription.\nName\nOperating System\nConnect to\nvmwhizlab1\nWindows Server 2019\nSubnetA\nvmwhizlab2\nWindows Server 2019\nSubnetB\nPublic IP addresses are assigned to the virtual machines.\nAt the operating system level, incoming remote desktop connections have been allowed.\nBoth of the subnets are in the same virtual network.\nA network security group named nsg-whizlab1 has been assigned to SubnetA. This network security group only has the default rules.\nA network security group named nsg-whizlab2 has been assigned to the network interface of vmwhizlab2. This network security group has an additional rule with the following details.\nPriority: 100\nName: nsgrule\nPort: 3389\nProtocol: TCP\nSource: Any\nDestination: Any\nAction: Allow\nIs it possible to remote desktop into vmwhizlab2 from vmwhizlab1?",
+      "Options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "Correct Answer": [
+        "1"
+      ],
+      "Explanation": "The reason for failure of RDP from vmwhizlab1 to vmwhizlab2 is - the newly added NSG i.e., nsg-whizlab1 has default rules and these rules does not allow RDP to vmwhizlab1.  Since RDP is failed in first step, we cannot RDP to vmwhizlab2 and hence the answer is No.\nOn creation of new nsg-whizlab1 and assigning it to SubnetA, and then trying to RDP to vmwhizlab1 throws the following error.<Image1>\nIf new NSG was not created and associated to SubnetA then the answre will be Yes, reason when vmwhizlab1 is created RDP is default enabled and that allows us to connect.\n",
+      "metadata": {
+        "Images": {
+          "IMG1": "Image_1.png"
+        }
+      }
+    },
+    {
+      "Question Number": "15",
+      "Question": "A company has the following resource groups defined as part of their Azure subscription.\nName\nRegion\nrg-wl-01\nWest Europe\nrg-wl-02\nNorth Europe\nThe following virtual machines are then created in the subscription.\nName\nResource group\nRegion\nOperating system\nvmwl1\nrg-wl-01\nWest Europe\nWindows Server 2016\nvmwl2\nrg-wl-01\nNorth Europe\nWindows Server 2016\nvmwl3\nrg-wl-02\nWest Europe\nWindows Server 2016\nvmwlA\nrg-wl-01\nWest Europe\nUbuntu Server 18.04\nvmwlB\nrg-wl-01\nNorth Europe\nUbuntu Server 18.04\nvmwlC\nrg-wl-02\nWest Europe\nUbuntu Server 18.04\nThe following recovery service vault is also defined as part of the subscription.\nName\nRegion\nResource group\nvaultwl2090\nWest Europe\nrg-wl-01\nThe company wants to ensure that as many virtual machines as possible are backed up using the recovery services vault vaultwl2090.\nWhich of the following virtual machines can be backed up using the Recovery Services vault?",
+      "Options": [
+        "A. vmwl1 only",
+        "B. vmwl1 and vmwl3 only",
+        "C. vmwl1, vmwl3, vmwlA and vmwlC only",
+        "D. vmwl3 and vmwlC only",
+        "E. vmwl1, vmwl2, vmwl3, vmwlA, vmwlB and vmwlC"
+      ],
+      "Correct Answer": [
+        "2"
+      ],
+      "Explanation": "The Recovery Services vault and the virtual machine needs to be in the same region. This condition is fulfilled by the vmwl1, vmwl3, vmwlA, and vmwlC virtual machines.\nBecause of the satisfaction of this condition, all other options are incorrect.\nFor more information on backing up Azure virtual machines using the Azure backup feature, please visit the following URL-\nhttps://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm\n",
+      "metadata": ""
+    }
+  ]
+}

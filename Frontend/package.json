@@ -1,0 +1,67 @@
+{
+  "name": "projfrontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@mui-treasury/layout": "^4.5.0",
+    "@mui-treasury/mockup": "^1.2.10",
+    "@stripe/react-stripe-js": "^1.4.0",
+    "@stripe/stripe-js": "^1.14.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.11.0",
+    "react": "^16.12.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-addons-update": "^15.6.3",
+    "react-beforeunload": "^2.5.1",
+    "react-bootstrap": "^1.4.3",
+    "react-component-countdown-timer": "^0.1.8",
+    "react-cookie": "^4.0.3",
+    "react-countdown-circle-timer": "^2.4.0",
+    "react-countdown-now": "^2.1.2",
+    "react-dom": "^16.12.0",
+    "react-full-screen": "^1.0.1",
+    "react-gradient-text": "^0.1.0",
+    "react-router-dom": "^5.1.2",
+    "react-score-indicator": "^2.2.1",
+    "react-scripts": "3.4.0",
+    "react-stripe-checkout": "^2.6.3",
+    "react-swipeable-views": "^0.13.9",
+    "react-toastify": "^7.0.3",
+    "react-webcam": "^5.2.2",
+    "recharts": "^2.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.5",
+    "style-loader": "^2.0.0"
+  }
+}

@@ -1,0 +1,136 @@
+{
+    "articles":[
+    {
+        "id":1,
+        "categoryName":"Web",
+        "imageUrl":"",
+        "subCategory":[
+            {
+                "subCategoryName":"ReactJs",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"React Native",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"AngularJs",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"Vue.js",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"Bootstrap",
+                "imageUrl":""
+            }
+        ]
+
+    },
+    {
+        "id":2,
+        "categoryName":"Cloud",
+        "imageUrl":"",
+        "subCategory":[
+            {
+                "subCategoryName":"AWS",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"GCP",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"Azure",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"Salesforce",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"Alibaba",
+                "imageUrl":""
+            }
+        ]
+
+    },
+    {
+        "id":3,
+        "categoryName":"Programming Languages",
+        "imageUrl":"",
+        "subCategory":[
+            {
+                "subCategoryName":"Python",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"C++",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"Java",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"JavaScript",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"PHP",
+                "imageUrl":""
+            }
+        ]
+
+    },
+    {
+        "id":4,
+        "categoryName":"Machine Learning",
+        "imageUrl":"",
+        "subCategory":[
+            {
+                "subCategoryName":"Python",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"C++",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"R",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"Julia",
+                "imageUrl":""
+            }
+        ]
+
+    },
+    {
+        "id":5,
+        "categoryName":"Data Science",
+        "imageUrl":"",
+        "subCategory":[
+            {
+                "subCategoryName":"Python",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"R",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"Tableau",
+                "imageUrl":""
+            },
+            {
+                "subCategoryName":"Excel",
+                "imageUrl":""
+            }
+        ]
+
+    }
+]
+}
